@@ -1,3 +1,6 @@
+# WordPress镜像，如果需要使用Fork过去，然后修改Wp-config.php 里的数据库信息即可
+docker run  --name wordpress -d -p 21000:80 pintimes/wordpress /sbin/my_init
+
 # Docker: Ubuntu, Nginx and PHP Stack
 
 This is the basis for LEMP stack (minus MySQL). This is based on [phusion/baseimage-docker](https://github.com/phusion/baseimage-docker) base Ubuntu image, which takes care of system issues which Docker's base Ubuntu image does not take care of, such as watching processes, logrotate, ssh server, cron and syslog-ng.
